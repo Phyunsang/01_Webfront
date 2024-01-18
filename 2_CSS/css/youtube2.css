@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+
+    border: 1px solid black;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    width: 1140px;
+    margin: auto;
+}
+
+header {
+    height: 80px;
+    display: flex;
+
+}
+
+.qwer {
+    width: 50px;
+    margin: auto;
+}
+
+
+
+
+
+header > :nth-child(1) {
+    flex-basis: 50%;
+}
+
+header > section:nth-of-type(1),
+header > section:nth-of-type(3) {
+    flex-basis: 3%;
+}
+
+header > section:nth-of-type(2) {
+    flex-basis: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div > label {
+    font-size: 10px;
+}
+
+
+/* 로고 */
+header > section:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#yt {
+    width: 60px;
+    height: 60px;
+}
+
+.mic {
+    width: 60px;
+    height: 60px;
+}
+
+.vid {
+    width: 60px;
+    height: 60px;
+}
+
+.bel {
+    width: 60px;
+    height: 60px;
+}
+
+.cir {
+    width: 60px;
+    height: 60px;
+}
+
+/* 검색 스타일 */
+
+.search-area {
+    width: 500px;
+}
+
+.search-area fieldset {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0;
+    padding: 2px;
+
+    display: flex;
+}
+
+#query {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;  /* 0 */
+    outline: none;  /* 0 */
+    /* outline: input 태그에 포커스가 맞춰졌을 때
+    이를 표현하기 위한 바깥선
+    */
+
+    flex-basis: 92%;
+}
+
+
+
+#search-btn {
+    flex-basis: 8%;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    border: none;
+    background-color: transparent;
+}
+
+/* nav */
+
+nav {
+    height: 50px;
+    border-bottom: 2px solid black;
+   
+    background-color: white;
+}
+
+/* nav > ul 스타일 */
+nav > ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav li {
+    flex-basis: 150px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    height: 100%;
+    display: block;
+
+    text-align: center;
+    line-height: 50px;
+
+    transition-duration: 0.2s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #455ba8;
+    color: white;
+}
+
+/* content */
+.content {
+    height: 500px;
+    display: flex;
+}
+
+.content-1 { flex-basis: 70%;}
+.content-2 { flex-basis: 30%;}
+
+/* login 스타일 */
+form[name="login-form"] {
+    height: 150px;
+    padding: 10px;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form[name="login-form"] > label {
+    margin-top: 5px;
+    font-size: 14px;
+    flex-basis: 20px;
+}
+
+#signup-find-area {
+    flex-basis: 20%;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+#signup-find-area > a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#signup-find-area > span {
+    padding: 0 10px;
+}
+
+#id-pw-area {
+    flex-basis: 60%;
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ddd;
+}
+
+#id-pw-area > section:first-child {
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#id-pw-area > section:last-child {
+    flex-basis: 25%;
+}
+
+#id-pw-area input {
+    border: 0;
+    outline: none;
+    padding: 5px;
+    flex-basis: 50%;
+    border-right: 1px solid #ddd;
+}
+
+#id-pw-area input:first-child {
+    border-bottom: 1px solid #ddd;
+}
+
+#id-pw-area input:focus {
+    border: 2px solid #455ba8;
+}
+
+
+#id-pw-area button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#id-pw-area button:hover {
+    background-color: #455ba8;
+    color: white;
+}
+
+/* footer */
+footer {
+    height: 200px;
+    background-color: #a3add342;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p {
+    font-weight: bold;
+}
+
+footer > section > * {
+    font-size: 14px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer span {
+    padding: 0 10px;
+}
