@@ -55,6 +55,8 @@ header > section:nth-of-type(1) {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50px;
+
 }
 
 #yt {
@@ -279,4 +281,8 @@ footer a {
 
 footer span {
     padding: 0 10px;
+}
+
+.fa-solid fa-bars {
+    flex-basis: 30%;
 }
