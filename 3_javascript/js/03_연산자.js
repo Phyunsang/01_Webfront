@@ -183,9 +183,9 @@ function check() {
 // 연습문제
 
 function printJSObject() {
-    const userName = document.getElementById("userName")
-    const userAge = document.getElementById("userAge")
-    const userGender = document.getElementById("userGender")
+    const userName = document.getElementById("userName");
+    const userAge = document.getElementById("userAge");
+    const userGender = document.getElementById("userGender");
 
     const userInfo = {
         이름 : userName.value,
