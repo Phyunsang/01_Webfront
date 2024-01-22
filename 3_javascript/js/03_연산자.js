@@ -182,16 +182,19 @@ function check() {
 
 // 연습문제
 
+function printJSObject() {
+    const userName = document.getElementById("userName")
+    const userAge = document.getElementById("userAge")
+    const userGender = document.getElementById("userGender")
 
-const name = "홍길동";
-console.log("name : ", name, typeof name);
+    const userInfo = {
+        이름 : userName.value,
+        나이 : userAge.value,
+        성별 : userGender.value
+    };
 
-const phone = '01012341234'
-console.log("phone : ", phone, typeof phone);
-
-const gender = 'M'; // 한 글자만 작성해도 문자열(string)
-console.log("gender : ", gender, typeof gender);
-
+    console.log(userInfo);
+}
 
 
     
