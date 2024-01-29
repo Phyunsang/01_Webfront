@@ -1,0 +1,25 @@
+.container {
+    
+    margin: auto;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+
+}
+
+
+
+.h2 {
+    font-size: 20px;
+    margin-left: 40%;
+}
+
+.click {
+    box-sizing: 50px;
+    
+}
+
+.input {
+    margin-left: 48%;
+}
