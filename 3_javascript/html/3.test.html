@@ -10,6 +10,12 @@
             border: 1px solid black;
         }
 
+        .result {
+            width: 100px;
+            height: 100px;
+
+        }
+
     
     </style>
 </head>
@@ -19,9 +25,34 @@
     color 색상 : <input type="text" id="colorName"> <br>
     <button id="btn">적용</button>
 
+    <!-- 결과를 표시할 곳 -->
     <section id="result"></section>
 
     <script>
+        // 함수 선언 및 정의, 3개를 한 번에 선언?
+
+        function btn() {
+
+            let tagName = document.getElementById("tagName").value;
+             alert("태그 버튼이 클릭 되었습니다");
+
+
+            let tagInnerText = document.getElementById("tagInnerText").value;
+
+
+            let colorName = document.getElementById("colorName").value;
+            colorName.style.backgroungColor.black
+
+
+        }
+
+        // 결과 출력(색상은 어떻게?)
+        let result = 
+
+        //만든 메세지를 id가 "result" 로 나오게
+        document.getElementById("result").innerText = result;
+
+
     </script>
 </body>
 </html>

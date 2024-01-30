@@ -11,6 +11,43 @@
     <button id="btn">click</button>
 
     <script>
+        //함수 지정
+        const numberInput = document.getElementById("numberInput").value;
+        //const btn =document.getElementById("btn");
+        document.getElementById("btn").addEventListener("click",function() {clickbtn();});
+
+        function clickbtn() {
+
+
+            /*const numberInput = Math.floor(Math.random());
+
+     
+
+                 if(numberInput % 2 ==0) {
+                    alert(`${numberInput} 는 짝수입니다.`);
+                } else if(numberInput % 2 != 0) {
+                    alert(`${numberInput} 는 짝수입니다.`);
+                } else if(numberInput == 0) {
+                    alert(`${numberInput} 는 0입니다.`);
+                } */
+
+                
+                const numberInput = document.getElementById("numberInput").value;
+
+                if(numberInput % 2 === 0) {
+                    alert("입력한 숫자는 짝수입니다.");
+                } else {
+                    alert("입력한 숫자는 홀수입니다.");
+                }
+
+                console.log(numberInput);
+
+                //alert(message);
+
+
+            }
+
+  
     </script>
 </body>
 </html>
