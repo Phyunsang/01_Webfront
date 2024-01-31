@@ -1,5 +1,5 @@
 // if - 양수인지 검사
-const input1 =document.getElementById("input1")
+const input1 =document.getElementById("input1");
 
 function check1() {
     const value = Number(input1.value); // 입력받은 값
@@ -13,7 +13,7 @@ function check1() {
     if(value <= 0) {
         alert("양수가 아닙니다");
     }
-}
+};
 
 // if - else -> 홀짝 판별하기
 function check2() {
