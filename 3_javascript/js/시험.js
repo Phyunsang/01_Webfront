@@ -38,8 +38,7 @@ applyBtn.addEventListener("click", function() {
         box.style.fontSize = fs.value + "px";
     }
 
-    // fw -> 체크된 게 없으면 null 반환
-    //    -> 체크된 게 있으면 null 아님
+    
     if(fw != null) { // 글자 굵기가 체크된 게 있다면
         console.log(fw);
         box.style.fontWeight = fw.value;
